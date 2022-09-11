@@ -1,0 +1,37 @@
+import java.lang.reflect.Array;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        int [] mylist = {2,4,6,8,12,14,16};
+        System.out.println(Arrays.toString(mylist));
+        System.out.println();
+
+        Arrays.fill(mylist,3,5,216);
+        System.out.println(Arrays.toString(mylist));
+        System.out.println();
+
+        int [] table = {1,-10,-2,12,81,100,-251,321,-321};
+        Arrays.sort(table);
+        System.out.println(Arrays.toString(table));
+        System.out.println();
+
+        System.out.println("81 degeri dizinin  " + Arrays.binarySearch(table,81) + ". indisindedir. ");
+        System.out.println();
+
+        int [] copyList = Arrays.copyOf(mylist , 4);
+        System.out.println(Arrays.toString(copyList));
+        System.out.println();
+
+        int [] copyList2 = Arrays.copyOfRange(table,2,5);
+        System.out.println(Arrays.toString(copyList2));
+
+
+
+
+
+    }
+}
